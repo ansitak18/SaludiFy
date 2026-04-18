@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy' , sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+:root{
+   --bg-color: white;
+   --text-color: #1d4305;
+   --btn-color: linear-gradient(120deg, white, rgb(162, 242, 93));
+
+}
+
+body{
+   background: var(--bg-color);
+    min-height: 100vh;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+/* Center links */
+.nav-links{
+  display: flex;
+  gap: 30px; 
+}
+
+/* Right side */
+.auth-links{
+  display: flex;
+  gap: 15px;
+}
+
+/* Links style */
+.nav-links a,
+.auth-links a{
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+/* Signup button style */
+.auth-links a:last-child{
+  background: white;
+  color: var(--text-color);
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+
+.nav-links a,
+.auth-links a{
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.auth-links a:hover{
+  background: var(--btn-color);
+  padding: 8px 16px;
+  border-radius: 10px;
+  background: var(--btn-color);
+  transform: translateY(-2px);
+}
+
+.logo img{
+    height: 50px;
+    cursor: pointer;
+}
+
+/*Hero section*/
+
+.hero{
+    text-align: center;
+    margin-top: 80px;
+    color: var(--bg-color);
+}
+
+.hero h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: cursive;
+    color: var(--text-color);
+}
+
+.hero p{
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: rgb(32, 25, 25);
+}
+
+.hero-btn{
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.hero-btn:hover{
+  background: var(--btn-color);
+  padding: 12px 22px;
+  border-radius: 10px;
+  background: var(--btn-color);
+  transform: translateY(-2px);
+}
+
+.hero-img{
+    margin-top: 20px;
+    width: 1000px;
+    border-radius: 35%;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
