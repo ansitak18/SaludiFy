@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login-Page</title>
+    <link rel="stylesheet" href="./style/login.css">
 </head>
 <body>
     <div class="auth-container">
         <h2>Welcome to Saludify</h2>
         <!-- Toggle buttons -->
            <div class="toggle">
-            <button>Login</button>
-            <button>SignUp</button>
+            <button id="btn-login">Login</button>
+            <button id="btn-signup">SignUp</button>
            </div>
 
            <!--Login Form -->
-           <div class="login-section">
+           <div class="login-section" id="loginSection">
             <h3>Login</h3>
-            <form>
+            <form id="loginForm">
               <label>Email</label><br>
               <input type="email" placeholder="Enter Email" required><br><br>
 
-              <label>Password</label>
+              <label>Password</label><br>
               <input type="password" placeholder="Enter Password" required><br><br>
 
               <button type="submit">Login</button>
@@ -30,10 +31,10 @@
           <hr><br>
 
     <!--SignUp Form-->
-    <div class="signup-section">
+    <div class="signup-section" id="signupSection">
         <h3>Signup</h3>
 
-        <form>
+        <form id="signupForm">
             <label>Full Name</label><br>
             <input type="text" placeholder="Enter Name" required><br><br>
 
@@ -51,6 +52,6 @@
     </div>
 </div>
 
-    
+<script src="./logic/login.js"></script>
 </body>
 </html>

@@ -14,13 +14,19 @@ html,body{
    --bg-color: white;
    --text-color: #1d4305;
    --btn-color: linear-gradient(120deg, white, rgb(162, 242, 93));
-
+   --bg-box-color: linear-gradient(160deg, white , rgb(201, 0, 0));
+    --bg-box-color: linear-gradient(160deg, white , rgb(201, 0, 0));
+   --body-bg-color: radial-gradient(circle at center, 
+              white 60%, 
+              #dcdcdc 75%, 
+              #555 100%);
 }
 
 body{
-   background: var(--bg-color);
+   background: var(--body-bg-color);
     min-height: 100vh;
-}
+    
+  }
 
 .navbar{
   display: flex;
@@ -124,3 +130,4 @@ body{
     justify-content: center;
     object-fit: cover;
 }
+
