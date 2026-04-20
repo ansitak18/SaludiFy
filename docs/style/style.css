@@ -17,9 +17,9 @@ html,body{
    --bg-box-color: linear-gradient(160deg, white , rgb(201, 0, 0));
     --bg-box-color: linear-gradient(160deg, white , rgb(201, 0, 0));
    --body-bg-color: radial-gradient(circle at center, 
-              white 60%, 
-              #dcdcdc 75%, 
-              #555 100%);
+              rgb(209, 203, 203) 60%, 
+              #d7f6b7 75%, 
+              #b4b4b4 100%);
 }
 
 body{
@@ -27,6 +27,20 @@ body{
     min-height: 100vh;
     
   }
+
+body.dark img.logo {
+    filter: brightness(1.2) contrast(1.1);
+}
+
+img.logo {
+    filter: hue-rotate(90deg) saturate(2);
+}
+
+.logo {
+    width: 180px;
+    mix-blend-mode: multiply;
+    filter: hue-rotate(90deg) saturate(1.5);
+}
 
 .navbar{
   display: flex;
@@ -57,7 +71,6 @@ body{
 
 /* Signup button style */
 .auth-links a:last-child{
-  background: white;
   color: var(--text-color);
   padding: 3px 10px;
   border-radius: 5px;
